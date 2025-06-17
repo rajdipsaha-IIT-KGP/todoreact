@@ -7,7 +7,7 @@ export default function UserMenu() {
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef(null);
 
-  // Close menu on outside click
+
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (menuRef.current && !menuRef.current.contains(event.target)) {
@@ -32,7 +32,7 @@ export default function UserMenu() {
     zIndex: 1000,
     width: "160px",
     fontSize: "15px",
-    color: "#f1f5f9", // light text
+    color: "#f1f5f9", 
     cursor: "pointer",
     opacity: isOpen ? 1 : 0,
     transform: isOpen ? "translateY(0)" : "translateY(-10px)",
@@ -51,7 +51,7 @@ export default function UserMenu() {
   };
 
   const menuItemHoverStyle = {
-    backgroundColor: "#334155", // hover blue-gray
+    backgroundColor: "#334155", 
   };
 
   const profileIconContainerStyle = {
