@@ -18,9 +18,9 @@ export default function SignUp({ showNotification }) {
       });
 
       if (response.data.message === "User created successfully") {
-  localStorage.setItem("token", response.data.token); // ✅ Store the token
+  localStorage.setItem("token", response.data.token);
   showNotification("✅ Sign Up Successful");
-  navigate('/todos'); // ✅ Go directly to todos page
+  navigate('/todos'); 
 }
 else {
         showNotification("❌ Already exist: " + response.data.message);
