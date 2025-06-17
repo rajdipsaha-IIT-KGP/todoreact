@@ -48,6 +48,7 @@ export default function UserMenu() {
     textDecoration: "none",
     display: "block",
     transition: "background 0.3s",
+    textAlign: "center",
   };
 
   const menuItemHoverStyle = {
