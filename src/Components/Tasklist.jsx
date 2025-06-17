@@ -8,7 +8,7 @@ export default function Tasklist({ tasks, handleDeleteTask }) {
     padding: "16px 20px",
     borderRadius: "12px",
     backgroundColor: "#1e293b", 
-    color: "#f1f5f9", =
+    color: "#f1f5f9", 
     fontSize: "18px",
     lineHeight: "1.6",
     border: "1px solid #334155",
