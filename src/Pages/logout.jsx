@@ -1,4 +1,4 @@
-// ✅ CORRECT WAY
+
 export default function Logout() {
   function Logout() {
     localStorage.removeItem("token");
@@ -9,7 +9,7 @@ export default function Logout() {
     <div
       style={{
         minHeight: '100vh',
-        backgroundColor: '#0f172a', // Very dark background
+        backgroundColor: '#0f172a', 
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
