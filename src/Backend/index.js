@@ -1,12 +1,12 @@
 const express = require('express');
-const cors = require('cors'); // ✅ Added
+const cors = require('cors'); 
 const bcrypt = require('bcrypt');
 const mongoose = require('mongoose');
 const jwt = require('jsonwebtoken');
 const { UserModel, TodoModel } = require('./db');
 
 const app = express();
-app.use(cors()); // ✅ Important line
+app.use(cors()); 
 app.use(express.json());
 
 
@@ -34,7 +34,7 @@ const hashpassword = await bcrypt.hash(password, 10);
   }
 });
 
-// 👉 Signin route
+
 app.post("/signin", async (req, res) => {
   const { email, password, name } = req.body;
 
@@ -62,7 +62,7 @@ app.post("/signin", async (req, res) => {
   }
 });
 
-// 🚧 Placeholder for todo creation
+
 app.post("/todo", auth,async (req, res) => {
   const userId = req.userId;
   const title = req.body.title;
@@ -74,7 +74,7 @@ app.post("/todo", auth,async (req, res) => {
   });
 });
 
-// 🚧 Placeholder for fetching todos
+
 app.get("/todos", auth,async (req, res) => {
   const userId = req.userId;
   try{const todos = await TodoModel.find({ userId: userId });
@@ -105,7 +105,7 @@ function auth(req, res, next) {
   }
 }
 
-// ✅ Start the server
+
 app.listen(3000, () => {
   console.log("Server is running on port 3000");
 });
