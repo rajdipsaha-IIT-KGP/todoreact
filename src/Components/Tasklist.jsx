@@ -7,17 +7,17 @@ export default function Tasklist({ tasks, handleDeleteTask }) {
     margin: "16px auto",
     padding: "16px 20px",
     borderRadius: "12px",
-    backgroundColor: "#1e293b", // dark card background
-    color: "#f1f5f9", // light text
+    backgroundColor: "#1e293b", 
+    color: "#f1f5f9", =
     fontSize: "18px",
     lineHeight: "1.6",
-    border: "1px solid #334155", // subtle border
+    border: "1px solid #334155",
     boxShadow: "0 4px 10px rgba(0, 0, 0, 0.3)",
     fontFamily: "'Poppins', sans-serif",
   };
 
   const deleteBtnStyle = {
-    backgroundColor: "#ef4444", // red-500
+    backgroundColor: "#ef4444", 
     color: "white",
     padding: "8px 12px",
     borderRadius: "6px",
@@ -31,11 +31,11 @@ export default function Tasklist({ tasks, handleDeleteTask }) {
   };
 
   const handleMouseOver = (e) => {
-    e.target.style.backgroundColor = "#dc2626"; // red-600
+    e.target.style.backgroundColor = "#dc2626"; 
   };
 
   const handleMouseOut = (e) => {
-    e.target.style.backgroundColor = "#ef4444"; // red-500
+    e.target.style.backgroundColor = "#ef4444"; 
   };
 
   return (
